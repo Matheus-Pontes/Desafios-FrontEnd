@@ -7,6 +7,7 @@
 
 ## Rocketseat :rocket: 
 - Desafios do [Discover](https://app.rocketseat.com.br/discover) 
+- Evento de 7 dias, no youtube.
   - [Ignite Lab 02](https://github.com/Matheus-Pontes/IgniteLab-02) :film_strip:
 
 ## Tecnologias :gear: 
