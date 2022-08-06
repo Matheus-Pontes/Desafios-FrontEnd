@@ -7,8 +7,8 @@
 
 ## Rocketseat :rocket: 
 - Desafios do [Discover](https://app.rocketseat.com.br/discover) 
-  - [Rocketflix] 
-  - [Rocketcard] 
+  - [Rocketflix](https://github.com/Matheus-Pontes/Desafios-FrontEnd/tree/main/RocketFlix)
+  - [Rocketcard](https://github.com/Matheus-Pontes/Desafios-FrontEnd/tree/main/RocketCard)
 - Evento de 7 dias, no youtube.
   - [Ignite Lab 02](https://github.com/Matheus-Pontes/IgniteLab-02) :film_strip:
 
@@ -16,7 +16,7 @@
 - HTML
 - CSS - Pré-Processadores
 - JS
-- REACTJS
+- ReactJS
 - AngularJS
 
 <h3 align="center"> Desenvolvido por Matheus Pontes :fist_oncoming:</h3> 
