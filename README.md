@@ -1,5 +1,5 @@
 <h1 align="center">Desafios - FrontEnd</h1>
-<p align="center"><strong>Repositório dedicado a desafios front-end :man_technologist:</strong></p> 
+<p align="center"><strong>Repositório dedicado a propor soluções de diferentes desafios de front-end :man_technologist:</strong></p> 
 
 ## Alura
 - Desafios do [7 days Of Code | Alura](https://7daysofcode.io/)
