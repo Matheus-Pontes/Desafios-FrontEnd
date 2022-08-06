@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #000000;
+    --bg-card: #0E1218;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: #1A1A1A;
+}
+
+body {
+    background: var(--bg-card); 
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+main h3 {
+    color: var(--text);
+    font-weight: 400;
+}
+
+main #card {
+    height: 700px;
+    border-radius: 50px;
+    border: 35px solid var(--bg); 
+}
+
+main #card #cardDetails {
+    padding: 1rem;
+}
+
+main #card #cardDetails .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 22px;
+    margin: .75rem;
+}
+
+.header figure {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg);
+    border-radius: 50px;
+    border: 1px solid var(--buttons);
+}
+
+.header figure img {
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+}
+
+.header h2 {
+    color: var(--text);
+    font-weight: 400;
+}
+
+.imgPerfil {
+    border: 5px solid var(--img-profile);
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    right: -50px;
+    z-index: -999;
+}
+
+.imgPerfil figure {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(130, 87, 229, .5);
+    border-radius: 50%;
+    padding: 1rem;    
+}
+
+.imgPerfil figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.detailsPerfil {
+    background-color: #1A1A1A;
+    opacity: .8;
+    color: #FFF;
+    border-radius: 8px;
+    width: 200px;
+    padding: 2rem 1rem;
+    position: relative;
+    top: -120px;
+}
+
+.detailsPerfil ul {
+    list-style: none;
+}
+
+.footer {
+    position: relative;
+    top: -50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    font-weight: 700px;
+    color: var(--text);
+}
+
+main #sectionButtonChange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main #sectionButtonChange h1 {
+    color: var(--text);
+    font-weight: 400;
+}
+
+main #sectionButtonChange button {
+    background-color: var(--bg);
+    border: 2px solid var(--border-button);
+    padding: .75rem 2rem;
+    border-radius: 15px; 
+    color: var(--buttons);
+    cursor: pointer; 
+    transition: all .25s;
+}
+
+main #sectionButtonChange button:active {
+    transform: translateY(5px);
+}
+
