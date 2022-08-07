@@ -23,23 +23,23 @@ const buildDataToScreen = (dataUserGithub) => {
 
     $('#detailsList').innerHTML = `
         <li>    
-            <img src="../assets/followers.svg" alt="">
+            <img src="./assets/followers.svg" alt="">
             <span>${dataUserGithub.followers} Seguidores</span>
         </li>
         <li>
-            <img src="../assets/following.svg" alt="">
+            <img src="./assets/following.svg" alt="">
             <span>${dataUserGithub.following} Seguindo</span>
         </li>
         <li>
-            <img src="../assets/repository.svg" alt="">
+            <img src="./assets/repository.svg" alt="">
             <span>${dataUserGithub.public_repos} repostitórios</span>
         </li>
         <li>
-            <img src="../assets/company.svg" alt="">
+            <img src="./assets/company.svg" alt="">
             <span>${dataUserGithub.company}</span>
         </li>
         <li>
-            <img src="../assets/location.svg" alt="">
+            <img src="./assets/location.svg" alt="">
             <span>${dataUserGithub.location}</span>
         </li>
     `;
