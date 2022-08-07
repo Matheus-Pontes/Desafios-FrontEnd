@@ -3,7 +3,7 @@
 - Botão que mudar a cor do background
 
 ## Layout
-- Gif
+![image](https://user-images.githubusercontent.com/62751571/183316169-5ca58daf-6817-4a8b-9798-a0cb9c72eebf.png)
 
 ## Techs
 - HTML
