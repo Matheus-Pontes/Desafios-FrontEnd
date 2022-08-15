@@ -1,7 +1,9 @@
 <h1 align="center">Desafios - FrontEnd</h1>
 <p align="center"><strong>Repositório dedicado a propor soluções de diferentes desafios de front-end :man_technologist:</strong></p> 
 
-## Portfolio
+## Meu repositório
+- [Jogo torre de Hanoi](https://github.com/Matheus-Pontes/JogoTorreDeHanoi)
+- [Jogo da memória](https://github.com/Matheus-Pontes/Memory-Game) 
 - [Minha proposta de site portfolio](https://github.com/Matheus-Pontes/Portfolio)
 
 ## Alura
