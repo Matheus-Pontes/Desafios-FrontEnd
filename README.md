@@ -16,6 +16,11 @@
   - [Rocketcard](https://github.com/Matheus-Pontes/Desafios-FrontEnd/tree/main/RocketCard)
 - Evento de 7 dias, no youtube.
   - [Ignite Lab 02](https://github.com/Matheus-Pontes/IgniteLab-02) :film_strip:
+- NLW 6º Edição
+  - [Acesso ao repositorio](https://github.com/Matheus-Pontes/LetMeaAsk)
+
+## Hackaton Startse
+- [Repositório](https://github.com/Matheus-Pontes/HackatonStartSe)
 
 ## Tecnologias :gear: 
 - HTML
