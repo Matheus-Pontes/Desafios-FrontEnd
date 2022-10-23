@@ -18,6 +18,8 @@
   - [Ignite Lab 02](https://github.com/Matheus-Pontes/IgniteLab-02) :film_strip:
 - NLW 6º Edição
   - [Acesso ao repositorio](https://github.com/Matheus-Pontes/LetMeaAsk)
+- Explorer lab 01 - JS
+  - [Acessar repositório](https://github.com/Matheus-Pontes/ExplorerLab01)
 
 ## Hackaton Startse
 - [Repositório](https://github.com/Matheus-Pontes/HackatonStartSe)
