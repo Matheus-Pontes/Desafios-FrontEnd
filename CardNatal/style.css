@@ -1,0 +1,96 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-orange: #f1961e;
+    --color-blue-700: #202942;
+
+    --color-blue-100: #426ee4;
+}
+
+body {
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    background-color: var(--color-blue-100);
+}
+
+main {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 3rem 3rem 1.2rem rgba(0,0 ,0, .8);
+    border-radius: 0;
+    border-top-right-radius: .8rem;
+    height: 40rem;
+
+    margin: auto;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+}
+
+main > section > section {
+    flex: 1;
+}
+
+main > section > section:first-child {
+    text-align: center;
+    margin-top: 2rem; 
+}
+
+main > section > section:first-child > figure {
+    margin-block: 2rem;
+}
+
+main > section > section:nth-child(2) {
+    text-align: center;
+    padding-inline: 2rem;
+}
+
+main > section > section:nth-child(2) > div {
+    padding-inline: 8rem;
+    margin-bottom: 2.5rem;
+}
+
+main > section > section:nth-child(2) > p {
+    color: var(--color-orange);
+    font-weight: 700;
+}
+
+main > section > section:nth-child(3) {
+    text-align: center;
+}
+
+main > section > section:nth-child(3) > button {
+    width: 24rem;
+    padding-block: 2rem;
+
+    background-color: var(--color-blue-700);
+    border: 0;
+    border-radius: .8rem;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: .3rem .3rem .8rem rgba(0,0 ,0, .5); 
+    cursor: pointer;
+
+    transition: width ease 2s;
+}
+
+main > section > section:nth-child(3) > button:hover {
+    width: 18rem;
+}
+

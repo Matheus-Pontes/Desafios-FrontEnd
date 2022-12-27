@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #D8DAE2;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+figure {
+    width: 100px;
+    height: 100px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background-color: #EFF0F1;
+    box-shadow: 0rem 4rem .5rem #C4C7D4;
+    border-radius: .8rem;
+    padding: 2rem;
+}
+
+main > section:first-child {
+    margin-bottom: 2rem;
+}
+
+main > section:first-child h1 {
+    font-size: 2.5rem;
+    margin-bottom: .8rem;
+}
+
+main > section:first-child button {
+    background-color: #fff;
+    color: #212121;
+    border: 0;
+    border-radius: 0.4rem;
+    padding: 0.9rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 0.4rem;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+}
+
+main > section:first-child button:hover {
+    background-color: #212121;
+    color: #EFF0F1;
+    transform: scale(1.1);
+}
+
+.principalSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: .8rem;
+    transition: all ease-in-out .4s;
+}
+
+.card:hover {
+    box-shadow: 0 .2em .3rem #212121;
+    transform: scaleY(1.02);
+}
+
+.card .principal {
+    width: 100%;
+    height: 200px;
+    margin-bottom: .8rem;
+}
+
+.card .principal img {
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+}
+
+.card .principal img:hover {
+    transform: scale(1.02);
+}
+
+.card .photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 1rem;
+}
+
+.card div figure {
+    height: 80px;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+}
+
+.card div figure:hover {
+    transform: scale(1.02);
+}
+
+.card div figure img {
+    border-radius: .4rem;
+}
+
+.card .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .details p:first-child {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card .quantifyLikes {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: 1.6rem;
+}
+
+.quantifyLikes span {
+    font-size: 1.2rem;
+}

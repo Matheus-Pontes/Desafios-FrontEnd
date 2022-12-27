@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-rosa: #ED7EA7;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem; 
+    background: var(--color-rosa);
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-color: #FFF;
+    padding-inline: 5rem;
+    width: 40rem;
+    height: 62rem;
+    border-radius: 1rem;
+
+    box-shadow: 6rem 6rem 3rem rgba(0, 0, 0, .13);
+}
+
+section {
+    margin: 5rem auto;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+}
+
+.people {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.people:hover {
+    padding-left: 1.5rem;
+}
+
+.people figure {
+    width: 5rem;
+    height: 5rem;
+}
+
+.people figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.people div:first-child {
+    flex: 4;
+}
+
+.people div p {
+    font-size: 1.3rem;
+}
+
+.people div span {
+    font-size: 1.1rem;
+    opacity: .8;
+}
+
+.people:has(:hover) .auxiliar {
+    padding: 2rem 1rem;
+    flex: 1;
+    border-bottom-right-radius: 50%;
+    background-image: linear-gradient(
+        90deg,
+        #fff,
+        rgba(250, 94, 155, .4),  
+        rgba(229, 96, 191, .5)
+    );
+    border-top-right-radius: 50%;
+
+    transition: all ease-in-out .1s;
+}
+
+button {
+    width: 100%;
+    padding: 2rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: .6rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    background-image: radial-gradient(
+        farthest-corner at 200px 250px,
+        #E560BF 50%,
+        #FA5E9B 100%
+    );
+    box-shadow: .25em .5rem .5rem rgba(250, 94, 155, .4);
+    transition: all ease-in-out .4s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-image: radial-gradient(
+        farthest-corner at 250px 200px,
+        #FA5E9B 50%,
+        #E560BF 100%
+    );
+}

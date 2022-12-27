@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Natal - Challenge Florin Pop</title>
+</head>
+<body>
+    <main>
+        <section>
+            <section>
+                <figure>
+                    <img src="https://img.icons8.com/ios/50/null/coniferous-tree.png" id="arvore"/>
+                </figure>
+
+                <h1>Merry Christmas!</h1>
+            </section>
+
+            <section>
+                <div>
+                    <p>You completed all your December's tasks <br> so we decided to get you a gift.</p>
+                </div>
+
+                <p>50% off on your Yearly Premium Plan</p>
+            </section>
+
+            <section>
+                <button>GET YOUR GIFT</button>
+            </section>
+        </section>
+    </main>
+
+    <script>
+        let clicado = false;
+
+        document.querySelector('button')
+            .addEventListener('click', (e) => {
+                if(e.type == 'click' && !clicado) {
+                    e.target.textContent = 'CONGRATS';
+                    clicado = true;
+                    document.querySelector('#arvore').src = "https://img.icons8.com/ios-filled/50/null/coniferous-tree.png";
+                }
+                else {
+                    e.target.textContent = "GET YOUR GIFT";
+                    document.querySelector('#arvore').src = "https://img.icons8.com/ios/50/null/coniferous-tree.png";
+                    clicado = false;
+                }
+            });
+    </script>
+</body>
+</html>

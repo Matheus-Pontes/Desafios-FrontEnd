@@ -11,6 +11,14 @@
   - [Rocketcard](https://github.com/Matheus-Pontes/Desafios-FrontEnd/tree/main/RocketCard)
 - Evento de 7 dias, no youtube.
   - [Ignite Lab 02](https://github.com/Matheus-Pontes/IgniteLab-02) :film_strip:
+- ChangeThemWithCSS
+  - Utilizando a propriedade ` :has() ` para fazer tal mudança de tema.
+
+## ICodeThis
+- Desafios feitos nessa plataforma
+  - CardHoverPeople
+  - CardNatal
+  - PopularCollection
 
 ## Tecnologias :gear: 
 - HTML
