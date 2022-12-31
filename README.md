@@ -27,14 +27,16 @@
 - [Repositório](https://github.com/Matheus-Pontes/HackatonStartSe)
 
 ## ICodeThis
-- Desafios feitos nessa plataforma
+- [Desafios feitos nessa plataforma](https://www.icodethis.com/)
   - CardHoverPeople
   - CardNatal
   - PopularCollection
+  - List Jobs
 
 ## Tecnologias :gear: 
 - HTML
 - CSS - Pré-Processadores
+- TailwindCss
 - JS
 - ReactJS
 - AngularJS
