@@ -32,6 +32,7 @@
   - CardNatal
   - PopularCollection
   - List Jobs
+  - User card
 
 ## Tecnologias :gear: 
 - HTML
