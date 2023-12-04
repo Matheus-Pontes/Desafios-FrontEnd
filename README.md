@@ -22,6 +22,10 @@
   - [Acessar repositório](https://github.com/Matheus-Pontes/ExplorerLab01)
 - ChangeThemWithCSS
   - Utilizando a propriedade ` :has() ` para fazer tal mudança de tema.
+- Projeto tela de login progressivo
+  - Desafio do boracodar.dev
+  - Projeto bem interessante com algumas estilizações bem legais no css como o step um contador
+  - No js temos o trabalho com o data-action que é uma escolha interessante para manipular steps, continuar e voltar.   
 
 ## Hackaton Startse
 - [Repositório](https://github.com/Matheus-Pontes/HackatonStartSe)
