@@ -46,13 +46,12 @@ html {
 }
 
 header {
-    
     position: sticky; /* Após dar scroll ele fica fixo na tela */ 
     top: 0;
+    z-index: 999;
     width: 100%;
     height: 7.2rem;
     display: flex;
-
     background: rgba(0, 4, 7, 0.90);
     backdrop-filter: blur(4px);
 }
@@ -72,6 +71,11 @@ header nav a {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 150%;
+    transition: all .3s ease;
+}
+
+header nav a:hover {
+    color: #F55827;
 }
 
 header button {
@@ -82,6 +86,13 @@ header button {
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+    transition: all .3s ease;
+}
+
+header button:hover {
+    background: #fff;
+    color: #101014;
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.3);
 }
 
 .s-hero .container {
@@ -91,9 +102,11 @@ header button {
 }
 
 .s-hero {
+    position: relative;
     width: 100%;
     height: 80rem;
     background: url('../img/bg.jpg') no-repeat;
+    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
 
@@ -101,9 +114,22 @@ header button {
     padding-bottom: 14.3rem;
 }
 
+.s-hero::after {
+    content: "";
+    width: 100%;
+    background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0.00) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 21.6rem;
+    transform: rotate(180deg);
+}
+
 .s-hero .left {
     width: 100%;
     max-width: 62.2rem;
+    animation: fadeLeft 1s forwards;
 }
 
 .s-hero .left .platform {
@@ -169,6 +195,13 @@ header button {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 150%;
+    transition: all .3s ease;
+}
+
+.s-hero .left .value .btns .btn-cart:hover {
+    background: #cf3302;
+    color: #fff;
+    box-shadow: 0px 0px 0px 3px rgba(245, 88, 39, 0.3);
 }
 
 .s-hero .left .value .btns .btn-favorite {
@@ -179,6 +212,17 @@ header button {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.s-hero .left .value .btns .btn-favorite:hover {
+    background: #fff;
+    color: #101014;
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.3);
+}
+
+.s-hero .left .value .btns .btn-favorite:hover  img {
+    filter: invert(1);
 }
 
 .s-hero .left ul {
@@ -210,6 +254,7 @@ header button {
     gap: 1.6rem;
 
     margin-top: 4.3rem;
+    animation: fadeRight 1s forwards;
 }
 
 .s-hero .right .square {
@@ -239,11 +284,22 @@ header button {
 }
 
 .s-video {
+    position: relative;
     width: 100%;
     padding-top: 8rem;
     padding-bottom: 6.4rem;
     overflow: hidden;
-    position: relative;
+}
+
+.s-video:before {
+    content: "";
+    width: 33.4rem;
+    height: 34.4rem;
+    background: linear-gradient(270deg, #060608 -3.29%, rgba(6, 6, 8, 0.00) 64.25%);
+    position: absolute;
+    top: 8.9rem;
+    right: 0;
+    z-index: 9;
 }
 
 .s-video .top {
@@ -359,16 +415,58 @@ header button {
     opacity: 0;
 }
 
+.s-vilao {
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-.s-video:before {
+    animation: changeBG 40s infinite linear;    
+    position: relative;
+}
+
+.s-vilao::after {
     content: "";
-    width: 33.4rem;
-    height: 34.4rem;
-    background: linear-gradient(270deg, #060608 -3.29%, rgba(6, 6, 8, 0.00) 64.25%);
+    width: 100%;
+    background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0.00) 100%);
     position: absolute;
-    top: 8.9rem;
-    right: 0;
-    z-index: 9;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 21.6rem;
+    transform: rotate(180deg);
+}
+
+.s-vilao::before {
+    content: "";
+    width: 100%;
+    background: linear-gradient(180deg, #060608 0%, rgba(0, 4, 7, 0.00) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 21.6rem;
+
+}
+
+.s-vilao h2 {
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+    text-align: center;
+}
+
+.s-vilao p {
+    color: #CECED9;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 7.2rem;
 }
 
 footer {
@@ -428,3 +526,99 @@ footer .right span {
     font-weight: 500;
     line-height: 150%;
 }
+
+/* Animação */
+
+@keyframes changeBG {
+    0%  { background: url('../img/bg-to-scroll/item = 01.jpg');
+        background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    4%  { background: url('../img/bg-to-scroll/item = 02.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    8%  { background: url('../img/bg-to-scroll/item = 03.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    12% { background: url('../img/bg-to-scroll/item = 04.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    16% { background: url('../img/bg-to-scroll/item = 05.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    20% { background: url('../img/bg-to-scroll/item = 06.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    24% { background: url('../img/bg-to-scroll/item = 07.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    28% { background: url('../img/bg-to-scroll/item = 08.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    32% { background: url('../img/bg-to-scroll/item = 09.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    36% { background: url('../img/bg-to-scroll/item = 10.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    40% { background: url('../img/bg-to-scroll/item = 11.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    44% { background: url('../img/bg-to-scroll/item = 12.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    48% { background: url('../img/bg-to-scroll/item = 13.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    52% { background: url('../img/bg-to-scroll/item = 14.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    56% { background: url('../img/bg-to-scroll/item = 15.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    60% { background: url('../img/bg-to-scroll/item = 16.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    64% { background: url('../img/bg-to-scroll/item = 17.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    68% { background: url('../img/bg-to-scroll/item = 18.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    72% { background: url('../img/bg-to-scroll/item = 19.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    76% { background: url('../img/bg-to-scroll/item = 20.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    80% { background: url('../img/bg-to-scroll/item = 21.jpg');background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
