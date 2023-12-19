@@ -124,9 +124,12 @@ header button:hover {
     z-index: 2;
     height: 21.6rem;
     transform: rotate(180deg);
+    pointer-events: none;
 }
 
 .s-hero .left {
+    position: relative;
+    z-index: 10;
     width: 100%;
     max-width: 62.2rem;
     animation: fadeLeft 1s forwards;
@@ -300,6 +303,7 @@ header button:hover {
     top: 8.9rem;
     right: 0;
     z-index: 9;
+    pointer-events: none;
 }
 
 .s-video .top {
@@ -620,5 +624,109 @@ footer .right span {
     }
 }
 
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    .s-hero {
+        height: auto;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    .s-video {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .s-video .btn {
+        display: none;
+    }
+
+    .s-vilao {
+        height: 55rem;
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    header nav {
+        display: none;
+    }
+
+    .s-hero .left {
+        max-width: 100%;
+    }
+
+    .s-hero .right {
+        display: none;
+    }
+
+    .s-vilao::before,
+    .s-vilao::after {
+        height: 10rem;
+    }
+
+    footer .container {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
 
 
+}
+
+@media (max-width: 560px) {
+    header > div.container img {
+        max-width: 12.6rem;
+    }
+
+    header button {
+        padding: 0.95rem 2rem;
+    }
+
+    .s-hero {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        background-size: 112.0rem;
+        background-position-x: 62%;
+    }
+
+    .s-hero .left h1 {
+        font-size: 4.2rem;
+        max-width: 84%;
+        line-height: 120%;
+    }
+
+    .s-hero .left .description {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+
+    .s-vilao {
+        height: auto;
+        padding: 6rem 0;
+        background-size: 900px; 
+    }
+
+    .s-vilao h2 {
+        font-size: 3.6rem;
+    }
+
+    .s-vilao p {
+        font-size: 1.6rem;
+        max-width: 30rem;
+        margin-bottom: 4rem;
+    }
+
+    footer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    footer::before {
+        background-size: 120%;
+    }
+}
