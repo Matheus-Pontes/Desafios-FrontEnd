@@ -39,6 +39,7 @@ body {
 
 .container-left .card-car {
     position: absolute;
+    left: 60px;
     width: 280px;
     top: 50%;
     transform: translateY(-50%);
@@ -77,4 +78,42 @@ body {
 .create-account-login > div > h1 {
     font-size: 2rem;
     font-weight: 700;
+}
+
+.toogle {
+    width: 64px;
+    background-color: #F2F2F2;
+    padding: 4px;
+    border-radius: 100px;
+    border: 2px solid var(--cinza-500);
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    transition: all ease .5s;
+}
+
+.toogle .toogle-bullet {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--vermelho-800);
+    transition: all ease .5s;
+}
+
+.toogle #chkToggle  {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.toogle:has(#chkToggle:checked)  {
+    background-color: var(--vermelho-800);
+    justify-content: flex-end;
+    transition: all ease .5s;
+}
+
+.toogle:has(#chkToggle:checked) .toogle-bullet  {
+    background-color: #F2F2F2;
 }
