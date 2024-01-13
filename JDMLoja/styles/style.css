@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Syne', sans-serif;
+}
+
+:root {
+    --vermelho-800: #A40602;
+    --vermelho-500: #F95F5A;
+    --preto-800: #262626;
+    --cinza-500: #A7A7A7;
+}
+
+body {
+    background-color: var(--vermelho-800);
+    height: 100dvh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.container-left {
+    flex: 1;
+    padding: 2rem;
+}
+
+.container-left h1 {
+    width: 200px;
+    margin: auto;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.container-left .card-car {
+    position: absolute;
+    width: 280px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card-car img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.create-account {
+    flex: 5;
+    background: #fefefe;
+    height: 100%;
+    padding: 2rem;
+    border-top-left-radius: 42px;
+    border-bottom-left-radius: 42px;
+
+    justify-content: center;
+}
+
+.create-account-login {
+   max-width: 600px;
+   margin: auto;
+}
+
+.create-account-login > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-account-login > div > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
