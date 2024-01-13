@@ -38,6 +38,10 @@
   - List Jobs
   - User card
 
+## Codeboost
+- Projeto devprocess
+- Evento realizado em uma semana no youtube do [canal codeboost](https://www.youtube.com/channel/UCo6ISPZVqoFBy4OtWwFv3mQ) 
+
 ## Tecnologias :gear: 
 - HTML
 - CSS - Pré-Processadores
