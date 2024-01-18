@@ -123,8 +123,17 @@ form {
 }
 
 form fieldset {
+    position: relative;
     border: 0;
     width: 100%;
+}
+
+form fieldset label {
+    position: absolute;
+    background-color: #fff;
+    top: -10px;
+    left: 10px;
+    padding-inline: .25rem;
 }
 
 form > fieldset, form .names {
@@ -208,6 +217,10 @@ form .orderTypeSign {
 }
 
 .btnSigUpDesktop, .btnSigUpLanguage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
     padding: 1rem;
     border-radius: 12px;
     font-weight: 600;
@@ -226,7 +239,6 @@ form .orderTypeSign {
     background: var(--vermelho-800);
     color: #fff;
 }
-
 
 .btnSigUpLanguage {
     border: 1px solid var(--cinza-500);
