@@ -117,3 +117,123 @@ body {
 .toogle:has(#chkToggle:checked) .toogle-bullet  {
     background-color: #F2F2F2;
 }
+
+form {
+    margin-top: 54px;
+}
+
+form fieldset {
+    border: 0;
+    width: 100%;
+}
+
+form > fieldset, form .names {
+    margin-bottom: 42px;
+}
+
+form input {
+    width: 100%;
+    border: 1px solid var(--cinza-500);
+    border-radius: 12px;
+    padding: 0.75rem;
+    height: 58px;
+
+    transition: border-color ease .3s;
+}
+
+form input:hover, form input:focus {
+    border-color: var(--preto-800);
+}
+
+form .names {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    width: 100%;
+}
+
+form .names input {
+    flex: 1;
+}
+
+form #btnCreateAccount {
+    border: 0;
+    width: 100%;
+    border-radius: 12px;
+    height: 57px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    background-color: var(--vermelho-800);
+    box-shadow: 0 8px 8px var(--vermelho-500);
+
+    margin-bottom: 32px;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+form #btnCreateAccount:hover  {
+    background-color: #A40602;
+    box-shadow: none;
+}
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.divider span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 18px;
+}
+
+.divider span::before, .divider span::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border: 1px solid var(--preto-800);
+}
+
+form .orderTypeSign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnSigUpDesktop, .btnSigUpLanguage {
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 600;
+    background-color: #fff;
+    
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.btnSigUpDesktop {
+    border: 1px solid var(--vermelho-500);
+}
+
+.btnSigUpDesktop:hover {
+    border: 1px solid var(--vermelho-500);
+    background: var(--vermelho-800);
+    color: #fff;
+}
+
+
+.btnSigUpLanguage {
+    border: 1px solid var(--cinza-500);
+}
+
+.btnSigUpLanguage:hover {
+    border: 1px solid var(--cinza-500);
+    background-color: var(--preto-800);
+    color: #fff;
+}
