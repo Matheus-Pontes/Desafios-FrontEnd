@@ -41,6 +41,21 @@ header div:nth-child(2) nav ul li a {
     text-decoration: none;
     color: var(--text-color-secondary);
     font-size: 16px;
+    transition: all ease-in-out .3s;
+}
+
+header div:nth-child(2) nav ul li a:hover {
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+
+header div:nth-child(2) nav ul li figure {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .perfil-presentation {
@@ -129,10 +144,11 @@ header div:nth-child(2) nav ul li a {
     gap: 4px;
     padding: 24px 16px;
     opacity: 0;
+    filter: blur(8);
     transition: opacity ease-in-out .3s;
 }
 
-.card-photo-details:hover {
+.card-photo:hover .card-photo-details {
     opacity: 1;
 }
 
