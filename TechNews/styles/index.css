@@ -1,11 +1,4 @@
 @import url(global.css);
+@import url(utility.css);
 @import url(header.css);
-
-/* utilit class */
-.grid {
-    display: grid;
-}
-
-.grid-flow-col {
-    grid-auto-flow: column;
-}
+@import url(sections.css);
