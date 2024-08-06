@@ -76,3 +76,16 @@ main {
     color: var(--text-color-primary);
     box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25); 
 }
+
+.ellipsis-three-lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.snap-x {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+}
