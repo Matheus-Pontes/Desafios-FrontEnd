@@ -1,0 +1,11 @@
+.container {
+    --max-width: 375px;
+    --px-lg: 1.5rem;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+}
+
+@media (width >= 80em) {
+    .container {
+        --max-width: 80rem;
+    }
+}
