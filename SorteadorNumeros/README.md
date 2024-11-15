@@ -1,0 +1,2 @@
+- [ ] Ler as instruções
+- [ ] Quebrar em tasks e estimar como se fosse trabalho 
