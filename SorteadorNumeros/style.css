@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --content-primary: #FFFFFF;
+    --content-secondary: #C7C9CC;
+    --content-tertiary: #D9D9D9;
+    --content-brand: #C58DE7;
+    --color-inverse: #030203;
+
+    --background-primary: #020202;
+    --background-secondary: #111012;
+    --background-tertiary: #24222E;
+    --background-brand: #C58DE7;
+    --background-gray: #3D3D3D;
+
+    --accent-pink: #D586E0;
+    --accent-blue: #91A1FA;
+    --accent-green: #77C0Af; 
+    --accent-lime: #D1DC97;
+    --accent-red: #E9A9B3;
+
+    --gradient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;
+    --gradient-background: #D586E0 0%, #91A1FA 98.93%;
+    --gradient-content: #C7C9CC 0%, #3D3D3D 100%;
+}
+
+
+body {
+    width: 100%;
+    background-color: var(--background-primary);
+    background-image: url("./assets/background.png");
+    margin: auto;
+    display: grid;
+    max-width: 1098px;
+    height: 100vh;
+}
+
+.container {
+    max-height: 412px;
+    border: 1px solid red;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Sora', sans-serif;
+    color: var(--content-primary);
+    margin-bottom: 90px;
+}
+
+.details  span {
+    background: linear-gradient(90deg, var(--gradient-content));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    text-transform: uppercase;
+    font-family: overline;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 150%;
+}
+
+.details h2 {
+    font-size: 72px;
+    font-family: 'Sora', sans-serif;
+    color: var(--content-primary);
+    text-transform: uppercase;
+    line-height: 130%;
+}
+
+.explanation {
+    margin-top: 38px;
+}
+
+.explanation > * {
+    margin-bottom: 36px;
+}
+
+.explanation > *:last-child {
+    margin-bottom: 0;
+}
+
+.explanation > div > p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--content-brand);
+}
+
+
+.explanation > div > p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.explanation > div > p svg {
+    width: 20px;
+    height: 20px;
+}
+
+.explanation > div > p svg path{
+    width: 20px;
+    height: 20px;
+    stroke: var(--content-brand);
+}
+
+.explanation > div > p:nth-child(2) {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--content-secondary);
+    margin-left: 28px;
+}
