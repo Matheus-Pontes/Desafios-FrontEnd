@@ -1,5 +1,5 @@
 # Sorteador de números
-- [ ] Ler as instruções
+- [x] Ler as instruções
 - [x] Quebrar em tasks e estimar como se fosse trabalho 
 
 ### Tasks
@@ -7,8 +7,14 @@
  - [ ] Task 1 - Layout Principal
  ![alt text](image.png)
     - Estimativa: 2 hrs
-    - Tempo realizado: 50 min
+    - Tempo realizado: 1h30 min
     - Descrição - logo - primeiro conteudo lateral.
+    - Segunda parte finalizada.
+    - Falta 
+      - Finalizar inputs(aceitar somente números)
+      - Toogle funcionar
+      - Finalizar button
+         
 
  - [ ] Task 2 - Aplicar responsividade no layout principal
     - Estimativa: 2,5 hrs

@@ -41,7 +41,9 @@ body {
 
 .container {
     max-height: 412px;
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 108px;
 }
 
 .logo {
@@ -78,11 +80,11 @@ body {
     margin-top: 38px;
 }
 
-.explanation > * {
+.explanation > *, .action > * {
     margin-bottom: 36px;
 }
 
-.explanation > *:last-child {
+.explanation > *:last-child, .action > *:last-child {
     margin-bottom: 0;
 }
 
@@ -104,7 +106,7 @@ body {
     height: 20px;
 }
 
-.explanation > div > p svg path{
+.explanation > div > p svg path {
     width: 20px;
     height: 20px;
     stroke: var(--content-brand);
@@ -116,4 +118,129 @@ body {
     line-height: 150%;
     color: var(--content-secondary);
     margin-left: 28px;
+}
+
+.action {
+    padding-block: 34px;
+    height: 100%;
+}
+
+.action > div > h3 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 150%;
+    color: var(--content-primary);
+    text-transform: uppercase;
+}
+
+.action > div > p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 16px;
+    font-weight: medium;
+    line-height: 150%;
+    color: var(--content-secondary);
+}
+
+.numbers-select {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.numbers-select > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numbers-select > div > span {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 150%;
+    color: var(--content-primary);
+    text-transform: uppercase;
+}
+
+.numbers-select > div > input {
+    background: var(--background-secondary);
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 130%;
+    color: #fff;
+    width: 88px;
+    height: 56px;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    position: relative;
+}
+
+.numbers-select > div > input:hover {
+    border: 1px solid var(--content-brand);
+}
+
+.numbers-select > div > input:active {
+    border: 4px solid var(--content-brand);
+}
+
+.not-repeat-numbers {
+    margin-top: 16px; 
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.not-repeat-numbers > label {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 12px;
+    color: var(--content-primary);
+}
+
+.toogle {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background-color: var(--content-tertiary);
+    padding: 3px;
+    border-radius: 16px;
+}
+
+.toogle::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--content-primary);
+}
+
+.toogle > input {
+    position: absolute;
+    inset: 0;
+    visibility: hidden;
+}
+
+.btn-sort-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--background-tertiary);
+    width: 100%;
+    padding: 16px;
+    font-family: 'Roboto flex', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 150%;
+    color: #fff;
+
+    border: none;
+    border-radius: 8px;
 }

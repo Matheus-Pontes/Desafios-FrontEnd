@@ -23,7 +23,7 @@
         <div class="details">
             <span>Online - gratuito</span>
 
-            <h2>Sorteador<br> de números</h2>
+            <h2>Sorteador de números</h2>
 
             <div class="explanation">
                 <div>
@@ -53,7 +53,40 @@
         </div>
 
         <div class="action">
+            <div>
+                <h3>Quero sortear:</h3>
+                <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+            </div>
+            <form>
+                <div class="numbers-select">
+                    <div class="quantity-numbers">
+                        <span>Números</span>
+                        <input type="text" id="txtQuantityNumbers"/>
+                    </div>
+                    <div class="range-initial">
+                        <span>DE</span>
+                        <input type="text" id="txtRangeInitial"/>
+                    </div>
+                    <div class="range-final">
+                        <span>DE</span>
+                        <input type="text" id="txtRangeFinal"/>
+                    </div>
+                </div>
+                <div class="not-repeat-numbers">
+                    <div class="toogle">
+                        <input type="checkbox" id="chkNotRepeatNumber" />
+                    </div>
+                    <label for="chkNotRepeatNumber">Não repetir número</label>
+                </div>
 
+                <button class="btn-sort-number" id="btnSortNumber">
+                    <span>Sortear</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0001 11.9998H4.00012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
         </div>
 
     </div>
