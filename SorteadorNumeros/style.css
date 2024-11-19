@@ -163,7 +163,7 @@ body {
     text-transform: uppercase;
 }
 
-.numbers-select > div > input {
+.numbers-select > div > div > input {
     background: var(--background-secondary);
     font-family: 'Sora', sans-serif;
     font-size: 32px;
@@ -177,15 +177,16 @@ body {
     border-radius: 8px;
     text-align: center;
     outline: none;
+}
+
+.txt-number {
     position: relative;
+    border-radius: 8px;
+    --gradient-border: transparent;
 }
 
-.numbers-select > div > input:hover {
-    border: 1px solid var(--content-brand);
-}
-
-.numbers-select > div > input:active {
-    border: 4px solid var(--content-brand);
+.txt-number:hover {
+    --gradient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;   
 }
 
 .not-repeat-numbers {
@@ -227,6 +228,7 @@ body {
 }
 
 .btn-sort-number {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,4 +245,29 @@ body {
 
     border: none;
     border-radius: 8px;
+    --gradient-border: transparent;
+    cursor: pointer;
+}
+
+.btn-sort-number:hover {
+    --gradient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;
+}
+
+.btn-sort-number::before,
+.txt-number::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(
+        90deg,
+        var(--gradient-border)
+    );
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.6px;   
 }
