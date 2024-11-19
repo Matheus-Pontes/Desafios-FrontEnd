@@ -4,10 +4,10 @@
 
 ### Tasks
 - Tasks
- - [ ] Task 1 - Layout Principal
+ - [x] Task 1 - Layout Principal
  ![alt text](image.png)
     - Estimativa: 2 hrs
-    - Tempo realizado: 1h30 min
+    - Tempo realizado: 2hrs
     - Descrição - logo - primeiro conteudo lateral.
     - Segunda parte finalizada.
     - Falta 
@@ -16,9 +16,10 @@
       - Finalizar button
          
 
- - [ ] Task 2 - Aplicar responsividade no layout principal
+ - [x] Task 2 - Aplicar responsividade no layout principal
     - Estimativa: 2,5 hrs
-    - Tempo realizado: 0hrs
+    - Tempo realizado: 40 minutos
+     - Ajuste rápido para o controlar os elementos
 
  - [ ] Task 3 - Fazer evento de sortear
     - Estimativa: 2 hrs

@@ -55,7 +55,7 @@ body {
     margin-bottom: 90px;
 }
 
-.details  span {
+.details  span, .titulo span {
     background: linear-gradient(90deg, var(--gradient-content));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,7 +68,7 @@ body {
     line-height: 150%;
 }
 
-.details h2 {
+.details h2, .titulo h2 {
     font-size: 72px;
     font-family: 'Sora', sans-serif;
     color: var(--content-primary);
@@ -210,6 +210,7 @@ body {
     background-color: var(--content-tertiary);
     padding: 3px;
     border-radius: 16px;
+    transition: all ease 2s;
 }
 
 .toogle::after {
@@ -225,6 +226,14 @@ body {
     position: absolute;
     inset: 0;
     visibility: hidden;
+}
+
+:has(input[type="checkbox"]:checked) .toogle::after {
+    right: 2px;
+}
+
+:has(input[type="checkbox"]:checked) .toogle {
+    background: linear-gradient(90deg,var(--gradient-background));
 }
 
 .btn-sort-number {
@@ -270,4 +279,32 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1.6px;   
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-height: 100%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 0px;
+    }
+    .titulo {
+        display: block !important;
+    }
+    .logo {
+        margin-bottom: 48px;
+    }
+
+    body {
+        padding: 2rem;
+        height: 100%;
+    }
+
+    .details span, .details h2 {
+        display: none;
+    }
+}
+
+.titulo {
+    display: none;
 }
