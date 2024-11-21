@@ -80,11 +80,11 @@ body {
     margin-top: 38px;
 }
 
-.explanation > *, .action > * {
+.explanation > *, .action > *, .results > * {
     margin-bottom: 36px;
 }
 
-.explanation > *:last-child, .action > *:last-child {
+.explanation > *:last-child, .action > *:last-child, .results > *:last-child {
     margin-bottom: 0;
 }
 
@@ -243,10 +243,11 @@ body {
     justify-content: center;
     gap: 8px;
     background-color: var(--background-tertiary);
-    width: 100%;
-    padding: 16px;
+    width: 482px;
+    max-width: 100%;
+    padding: 20px;
     font-family: 'Roboto flex', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 150%;
@@ -306,5 +307,9 @@ body {
 }
 
 .titulo {
+    display: none;
+}
+
+.hidden {
     display: none;
 }

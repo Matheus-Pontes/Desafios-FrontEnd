@@ -91,7 +91,7 @@
                     <label for="chkNotRepeatNumber">Não repetir número</label>
                 </div>
 
-                <button class="btn-sort-number" id="btnSortNumber">
+                <button class="btn-sort-number" id="btnSortNumber" type="button">
                     <span>Sortear</span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.0001 11.9998H4.00012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -101,7 +101,25 @@
             </form>
         </div>
 
+        <div class="results hidden">
+            <h3>Resultado do sorteio</h3>
+            
+            <div class="random-numbers">
+
+            </div>
+
+            <button class="btn-sort-number" id="btnSortNumber" type="button">
+                <span>Sortear novamente</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0001 11.9998H4.00012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

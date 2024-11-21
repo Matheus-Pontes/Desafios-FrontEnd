@@ -24,6 +24,12 @@
  - [ ] Task 3 - Fazer evento de sortear
     - Estimativa: 2 hrs
     - Tempo realizado: 0hrs
+      - Inputs aceitar apenas números
+      - ocultar elementos
+      - mostrar os números sorteando
+      - considerar animação para mostrar os números
+         - Feito o sortear dos númeos de forma aleatória e considerando o checkbox
+         - Falta: mostrar os valores na tela de forma animada.
 
  - [ ] Task 4 - Fazer evento de sortear considerando flag "não repetir números".   
     - Estimativa: 2 hrs
