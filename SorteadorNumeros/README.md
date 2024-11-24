@@ -23,7 +23,7 @@
 
  - [ ] Task 3 - Fazer evento de sortear
     - Estimativa: 2 hrs
-    - Tempo realizado: 0hrs
+    - Tempo realizado: 40 minutos
       - Inputs aceitar apenas números
       - ocultar elementos
       - mostrar os números sorteando

@@ -236,7 +236,7 @@ body {
     background: linear-gradient(90deg,var(--gradient-background));
 }
 
-.btn-sort-number {
+.btn-sort-number, .btn-resort-number {
     position: relative;
     display: flex;
     align-items: center;
@@ -259,12 +259,18 @@ body {
     cursor: pointer;
 }
 
-.btn-sort-number:hover {
+.btn-sort-number:hover, 
+.btn-resort-number:hover {
     --gradient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;
 }
 
+:has(.btn-resort-number:hover) #rotate-icon {
+    animation: rotateIcon linear 2s forwards;
+}
+
 .btn-sort-number::before,
-.txt-number::before {
+.txt-number::before,
+.btn-resort-number::before {
     content: " ";
     position: absolute;
     inset: 0;
@@ -312,4 +318,57 @@ body {
 
 .hidden {
     display: none;
+}
+
+
+.results h3 {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Roboto Flex";
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 150%;
+    color: var(--content-primary);
+}
+
+.random-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.random-number {
+    padding: 22px 18px;
+    border-radius: 28px;
+    color: var(--content-brand);
+
+    font-weight: bold;
+    font-family: "Roboto Mono";
+    font-size: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    animation: rotate linear 2s forwards;
+}
+
+@keyframes rotate {
+    0% {
+        color: var(--color-inverse);
+        background-color: var(--content-brand);
+        transform: scale(0) rotate(360deg);
+    }
+    80% {
+        color: var(--color-inverse);
+        background-color: var(--content-brand);
+    }
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(-360deg);
+    }
 }

@@ -4,6 +4,9 @@ const txtRangeFinal = document.getElementById("txtRangeFinal");
 const btnSortNumber = document.getElementById("btnSortNumber");
 const chkNotRepeatNumber = document.getElementById("chkNotRepeatNumber");
 
+const $action = document.querySelector(".action");
+const $results = document.querySelector(".results");
+
 function onlyNumbers(e) {
     e.target.value = e.target.value.replace(/\D/g, "");
 }
@@ -22,7 +25,6 @@ function getRandomArbitrary(min, max) {
 let result = {};
 function generateRandomNumbers() {
 
-    console.log(chkNotRepeatNumber.checked);
     const initial = txtRangeInitial.value;
     const final = txtRangeFinal.value;
 
@@ -38,8 +40,6 @@ function generateRandomNumbers() {
 
             let lastPosition = (i - 1) == -1 ? 0 : i - 1;
             
-            console.log(lastPosition);
-            
             result[i] = getRandomArbitrary(initial, final);
 
             if (result[i] == result[lastPosition])
@@ -50,12 +50,27 @@ function generateRandomNumbers() {
     }
 }
 
-btnSortNumber.addEventListener("click", function() {
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+btnSortNumber.addEventListener("click", async function() {
+
+    if (!txtQuantityNumbers.value 
+        || !txtRangeInitial.value 
+        || !txtRangeFinal.value)
+        return;
+
     generateRandomNumbers();
 
-    // tratar objetos para mostrar os números sorteados
+    $action.classList.add("hidden");
+    $results.classList.remove("hidden");
+    let auxiliar = document.querySelector(".random-numbers");
 
-    
+    for(let i=0; i < txtQuantityNumbers.value; i++) {
+        auxiliar.insertAdjacentHTML("beforeend", `<div class="random-number">${result[i]}</div>`);
+        await delay(2000);
+    }
 
 });
 
