@@ -372,3 +372,13 @@ body {
         transform: rotate(-360deg);
     }
 }
+
+#backActions {
+    background-color: var(--background-tertiary);
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto flex', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}

@@ -2,6 +2,8 @@ const txtQuantityNumbers = document.getElementById("txtQuantityNumbers");
 const txtRangeInitial = document.getElementById("txtRangeInitial");
 const txtRangeFinal = document.getElementById("txtRangeFinal");
 const btnSortNumber = document.getElementById("btnSortNumber");
+const btnReSortNumber = document.getElementById("btnReSortNumber");
+const backActions = document.getElementById("backActions");
 const chkNotRepeatNumber = document.getElementById("chkNotRepeatNumber");
 
 const $action = document.querySelector(".action");
@@ -19,6 +21,10 @@ txtRangeFinal.addEventListener("input", (e) => onlyNumbers(e));
 // pegar o range inicial e final que tenho que sortear.
 
 function getRandomArbitrary(min, max) {
+
+    if (min < max)
+        return Math.round(Math.random() * (min - max) + max);
+
     return Math.round(Math.random() * (max - min) + min);
 }
 
@@ -54,6 +60,30 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function hiddenElements(showActions) {
+    if (showActions){
+        $action.classList.remove("hidden");
+        $results.classList.add("hidden");
+    }
+    else {
+        $action.classList.add("hidden");
+        $results.classList.remove("hidden");
+    }
+}
+
+async function createRandomNumbers() {
+    let auxiliar = document.querySelector(".random-numbers");
+
+    for(let i=0; i < txtQuantityNumbers.value; i++) {
+        auxiliar.insertAdjacentHTML("beforeend", `<div class="random-number">${result[i]}</div>`);
+        await delay(2000);
+    }
+}
+
+function resetResultToRandomNumbers() {
+    document.querySelector(".random-numbers").innerHTML =  "";
+}
+
 btnSortNumber.addEventListener("click", async function() {
 
     if (!txtQuantityNumbers.value 
@@ -63,14 +93,23 @@ btnSortNumber.addEventListener("click", async function() {
 
     generateRandomNumbers();
 
-    $action.classList.add("hidden");
-    $results.classList.remove("hidden");
-    let auxiliar = document.querySelector(".random-numbers");
+    hiddenElements(false);
 
-    for(let i=0; i < txtQuantityNumbers.value; i++) {
-        auxiliar.insertAdjacentHTML("beforeend", `<div class="random-number">${result[i]}</div>`);
-        await delay(2000);
-    }
+    await createRandomNumbers();
 
 });
 
+btnReSortNumber.addEventListener("click", async function() {
+    resetResultToRandomNumbers();
+
+    generateRandomNumbers();
+
+    hiddenElements(false);
+
+    await createRandomNumbers();
+});
+
+backActions.addEventListener("click", function() {
+    resetResultToRandomNumbers();
+    hiddenElements(true);   
+});
